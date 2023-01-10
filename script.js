@@ -16,12 +16,15 @@ sub.addEventListener("click", () => {
 reset.addEventListener("click", () => {
   const resetDone = 0;
   counter.innerHTML = resetDone;
+  applyColor();
 });
 
 const applyColor = () => {
   if (counter.innerHTML > 0) {
     counter.style.color = "green";
+  } else if (counter.innerHTML < 0) {
+    counter.style.color = "orangered";
   } else {
-    counter.style.color = "red";
+    counter.innerHTML.color = "black";
   }
 };
