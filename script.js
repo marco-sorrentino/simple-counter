@@ -10,3 +10,8 @@ addition.addEventListener("click", (e) => {
 sub.addEventListener("click", () => {
   counter.innerHTML--;
 });
+
+reset.addEventListener("click", () => {
+  const resetDone = 0;
+  counter.innerHTML = resetDone;
+});
